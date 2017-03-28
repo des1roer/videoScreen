@@ -56,7 +56,7 @@ namespace videoScreen
                 {
                     
                     //      CustomOutputArgs = " -filter_complex \"[0] yadif=0:-1:0,scale=iw*sar:ih,scale='if(gt(a,16/9),1280,-2)':'if(gt(a,16/9),-2,720)'[scaled];[scaled] pad=1280:720:(ow-iw)/2:(oh-ih)/2:black \" -c:v libx264 -c:a mp3 -ab 128k "
-                        CustomOutputArgs = " -vcodec msmpeg4v2  -c:v libx264 -crf 24 "
+                        CustomOutputArgs = " -vcodec msmpeg4v2  -c:v libx264 -crf 24 -r 20 -b:v 500k"
 
                 }
             );
